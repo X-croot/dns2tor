@@ -1,0 +1,18 @@
+[package]
+name = "dns2tor"
+version = "0.1.0"
+edition = "2021"
+authors = ["Can ünüvar <unuvarcan111@gmail.com>"]
+description = "A DNS-over-Tor proxy using SOCKS5 and UDP listener"
+license = "MIT"
+repository = "https://github.com/X-croot/dns2tor"
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4.5", features = ["derive"] }
+tokio = { version = "1.38", features = ["full"] }
+tokio-socks = "0.5"
+trust-dns-proto = "0.23"
+dashmap = "5.5"
+chrono = { version = "0.4", features = ["serde"] }
+rand = "0.8"
